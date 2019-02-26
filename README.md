@@ -12,3 +12,8 @@ https://bit.ly/swap_arrows
 Can also connect using PsExec:
 
 psexec \\computer.fqdn -u domain\user -p password reg ... /f
+
+From elevated PowerShell:
+
+Set-PSReadLineOption -HistorySaveStyle SaveNothing
+(wget http://www.ucl.ac.uk/~ccaabrw/swaparrows.cmd).content | Invoke-Expression
